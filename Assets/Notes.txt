@@ -1,0 +1,83 @@
+
+two button mobile game - left and right
+you control a little white box that has cool particle trail
+you get upgrades and various things that make you stronger
+you fly down the screen and avoid spinning blocks, enemies, etc
+the game is technically and endless runner, but there are checkpoints in the middle
+you can replay earlier sections to improve your power at that point, or continue from where you left off
+	the point potential increases per level, e.g.: 10, 20, 40, 80, … 
+	so you don’t have to replay level 1 over and over
+	your score is measured as a % of possible points?
+	or grade/starts - 90% is considered perfect (you get all upgrade points)
+when you start a level, you can spend all your upgrade points on various things?
+
+something like 100 levels, or maybe 3-5 games with 30 levels each
+the background starts as just black (or just green, blue, etc in other modes)
+the background gets progressively cooler and crazier stuff happens
+possible worlds
+	black - normal - longest and most varied, possibly bosses and things like that
+	green - adventure
+	blue - pacifism or slow
+	red - speed or shooting
+
+	different worlds could have different steering styles - drifting, car steering, no going straight
+
+development:
+core gameplay is extremely simple
+once that’s done, continually add new sections to the game
+
+Between rounds all your upgrades get pulled off and converted back to money
+When you start a new level you can spend all the money you have
+
+Upgrades
+	speed
+	shield bubble
+	slow motion when in danger / when take a damage
+	repel bullets
+	suck in gold
+	double tap to dash
+	hold both buttons for .25 to slow down
+
+2 player mode!
+	coop campaign
+	vs mode where you shoot semi-random bullet patterns at each other
+		you get to choose your taunt phrase (Now you will see my TRUE form!)
+
+===============================
+
+player should not move, background should move
+can adjust how fast the tail/tailcamera move seperately
+tail could lag behind player slightly
+
+put in repo
+
+===============================
+
+boss focused?
+bosses are “benevolent”, they do this for YOUR good/training
+they have different difficulty levels, later levels unlock different forms
+3 dancing guys
+	constantly tell you to dance
+	music lines up with their attacks
+	charged laser beams
+	synced up waves of bullets
+spooky long haired girl
+	10 miles of hair, finally get to the top and she turns around
+	one eye is covered, maybe gets revealed as super scary powerful eye
+	uses minions/spirits that she summons while her back is turned
+rolling/bouncing robot
+	intro level boss
+	opens his wings and lasers/guns come out on robot arms
+the moon
+	shadow of the moon spins around
+	shoots bullets and lasers from a million miles away
+	summons lots of mysterious minions
+
+==============================
+
+shield:
+can gain a shield that protects you from one attack
+you cannot ever have 2 shields, but you can upgrade the time to recharge it
+
+
+
