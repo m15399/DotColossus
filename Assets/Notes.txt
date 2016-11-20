@@ -31,7 +31,7 @@ When you start a new level you can spend all the money you have
 
 Upgrades
 	speed
-	shield bubble
+	shield bubble - can’t have multiple, but can upgrade recharge time
 	slow motion when in danger / when take a damage
 	repel bullets
 	suck in gold
@@ -42,14 +42,6 @@ Upgrades
 	coop campaign
 	vs mode where you shoot semi-random bullet patterns at each other
 		you get to choose your taunt phrase (Now you will see my TRUE form!)
-
-===============================
-
-player should not move, background should move
-can adjust how fast the tail/tailcamera move seperately
-tail could lag behind player slightly
-
-put in repo
 
 ===============================
 
@@ -75,9 +67,23 @@ the moon
 
 ==============================
 
-shield:
-can gain a shield that protects you from one attack
-you cannot ever have 2 shields, but you can upgrade the time to recharge it
+slice:
+
+basic enemies
+complex enemies
+boss
+
+bullet waves - tweening, scripting
+
+respawn system, lives
+
+level structure
+placement of enemies, activating events
+restarting
+
+backgrounds
+
+
 
 
 

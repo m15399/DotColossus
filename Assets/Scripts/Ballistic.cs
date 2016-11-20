@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Moving object with velocity, friction
+/// </summary>
 public class Ballistic : MonoBehaviour {
 
 	public float xv = 0, yv = 0;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Utils {
 
+	/*
 	static Dictionary<string, GameObject> found = new Dictionary<string, GameObject>();
 
 	public static GameObject Find(string name){
@@ -19,6 +20,7 @@ public class Utils {
 			return found[name];
 		}
 	}
+	*/
 
 	public static Vector3 CameraPos {
 		get {
@@ -41,11 +43,14 @@ public class Utils {
 	}
 
 	// "Passed" the camera
+	//
 	public static bool OffCamera(Vector3 p){
 		p = p - CameraPos;
-		return p.y > 20;
+		return p.y < -20;
 	}
 
+	// Tell object to parent itself to the camera
+	//
 	public static void TrackWithCamera(Transform t){
 		t.SetParent(Camera.main.transform);
 	}
@@ -54,11 +59,20 @@ public class Utils {
 		t.SetParent(null);
 	}
 
+	// Destroy all bullets on screen
+	//
 	public static void KillAllBullets(){
 		GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
 		foreach(GameObject o in bullets){
 			GameObject.Destroy(o.gameObject);
 		}
+	}
+
+	// Round a float to n decimal places
+	//
+	public static float RoundToPlaces(float val, int n){
+		float pow = Mathf.Pow(10, n);
+		return Mathf.Round(val * pow) / pow;
 	}
 
 }
