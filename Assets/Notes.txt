@@ -26,8 +26,8 @@ development:
 core gameplay is extremely simple
 once that’s done, continually add new sections to the game
 
-Between rounds all your upgrades get pulled off and converted back to money
-When you start a new level you can spend all the money you have
+between rounds all your upgrades get pulled off and converted back to money
+when you start a new level you can spend all the money you have
 
 Upgrades
 	speed
@@ -37,6 +37,7 @@ Upgrades
 	suck in gold
 	double tap to dash
 	hold both buttons for .25 to slow down
+	extra lives for level
 
 2 player mode!
 	coop campaign
@@ -65,24 +66,56 @@ the moon
 	shoots bullets and lasers from a million miles away
 	summons lots of mysterious minions
 
+endless-ness:
+start in blackness, rise above the ground where you see mountains/spooky girl start
+rise up to the  moon
+the world slowly rotates 180 and you travel back to the ground
+you burst through the ground and enter mysterious land again
+
 ==============================
 
 slice:
 
 basic enemies
+	idle
+	spinning long boxes
+	angled path, shooting
+	pause, fly towards player
 complex enemies
+	big enemy with basic bullet pattern
+	big enemy with spinning lasers
 boss
+	complex bullet patterns
+	scripted movement/shooting pattern
 
 bullet waves - tweening, scripting
+	gun system
 
 respawn system, lives
 
 level structure
 placement of enemies, activating events
+	event box that turns on children
+	maybe box under the player that enables things that enter it?
 restarting
 
 backgrounds
+	efficient scrolling background - start, loop, end sections
 
+==============================
+
+simpler upgrade scheme
+getting x stars on a previous level gives you a bonus upgrade
+	Or getting x TOTAL stars
+can allocate a small number of upgrades before starting a level (rather than gold)
+will remember your allocation between rounds, but can switch at any time
+screen shows you flying, has tick-able boxes around you
+	box above represents shield
+	line of boxes for extra lives, etc
+
+==============================
+
+programming TODO:
 
 
 
