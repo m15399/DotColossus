@@ -7,11 +7,16 @@ public class ThePlayer : MonoBehaviour {
 	const float fric = .2f;
 	const float maxSpeed = 4f;
 
+	const float invulnerabilityTime = 2.5f;
+
 	public GameObject tail;
+	public SpriteRenderer sprite;
 
 	Vector3 respawnPosition;
 
 	public float xv, yv;
+
+	bool immune = false;
 
 	void Start () {
 		respawnPosition = transform.localPosition;
@@ -21,8 +26,8 @@ public class ThePlayer : MonoBehaviour {
 	void Reset(){
 		transform.localPosition = respawnPosition;
 
-		xv = 0;
-		yv = 3.5f;
+		// xv = 0;
+		// yv = 3.5f;
 
 		tail.GetComponent<TrailRenderer>().Clear();
 	}
@@ -76,6 +81,10 @@ public class ThePlayer : MonoBehaviour {
 		if(Input.GetKeyDown("r")){
 			Reset();
 		}
+
+		// Immune flashing
+		//
+		sprite.enabled = !immune || Mathf.Sin(Time.time * 30) > .5f;
 	}
 
 	void OnTriggerStay2D(Collider2D other){
@@ -83,7 +92,26 @@ public class ThePlayer : MonoBehaviour {
 	}
 
 	void HitByEnemy(){
+		if(immune)
+			return;
+		
+		Die();
+		BecomeImmune();
+	}
+
+	void BecomeImmune(){
+		immune = true;
+		CancelInvoke("CancelImmune");
+		Invoke("CancelImmune", invulnerabilityTime);
+	}
+
+	void CancelImmune(){
+		immune = false;
+	}
+
+	void Die(){
 		Reset();
 		Utils.KillAllBullets();
+		TheGameManager.playerLives--;
 	}
 }

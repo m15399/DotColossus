@@ -1,35 +1,21 @@
 
+design:
+
 two button mobile game - left and right
 you control a little white box that has cool particle trail
-you get upgrades and various things that make you stronger
-you fly down the screen and avoid spinning blocks, enemies, etc
-the game is technically and endless runner, but there are checkpoints in the middle
-you can replay earlier sections to improve your power at that point, or continue from where you left off
-	the point potential increases per level, e.g.: 10, 20, 40, 80, … 
-	so you don’t have to replay level 1 over and over
-	your score is measured as a % of possible points?
-	or grade/starts - 90% is considered perfect (you get all upgrade points)
-when you start a level, you can spend all your upgrade points on various things?
 
-something like 100 levels, or maybe 3-5 games with 30 levels each
-the background starts as just black (or just green, blue, etc in other modes)
-the background gets progressively cooler and crazier stuff happens
-possible worlds
-	black - normal - longest and most varied, possibly bosses and things like that
-	green - adventure
-	blue - pacifism or slow
-	red - speed or shooting
+the game flows like an endless runner, but there are checkpoints in the middle
+you can replay earlier sections to gain stars, or continue from where you left off
+getting x stars on a previous level gives you a bonus upgrade
+	or getting x TOTAL stars
+	provides multiple challenges - 3 starring earlier levels vs beating hard ones
+can allocate a small number of upgrades before starting a level
+	will remember your allocation between rounds, but can switch at any time
+	screen shows you flying, has tick-able boxes around you
+		box above represents shield
+		line of boxes for extra lives, etc
 
-	different worlds could have different steering styles - drifting, car steering, no going straight
-
-development:
-core gameplay is extremely simple
-once that’s done, continually add new sections to the game
-
-between rounds all your upgrades get pulled off and converted back to money
-when you start a new level you can spend all the money you have
-
-Upgrades
+upgrades
 	speed
 	shield bubble - can’t have multiple, but can upgrade recharge time
 	slow motion when in danger / when take a damage
@@ -44,7 +30,25 @@ Upgrades
 	vs mode where you shoot semi-random bullet patterns at each other
 		you get to choose your taunt phrase (Now you will see my TRUE form!)
 
-===============================
+=====================================================================================
+
+world:
+
+the background starts as just black (or just green, blue, etc in other modes)
+the background gets progressively cooler and crazier stuff happens
+
+possibly multiple worlds
+	black - normal - longest and most varied
+	green - adventure
+	blue - pacifism or slow
+	red - speed or shooting
+
+	different worlds could have different steering styles
+		drifting, car steering, no going straight
+
+=====================================================================================
+
+levels:
 
 boss focused?
 bosses are “benevolent”, they do this for YOUR good/training
@@ -66,19 +70,22 @@ the moon
 	shoots bullets and lasers from a million miles away
 	summons lots of mysterious minions
 
-endless-ness:
-start in blackness, rise above the ground where you see mountains/spooky girl start
-rise up to the  moon
-the world slowly rotates 180 and you travel back to the ground
-you burst through the ground and enter mysterious land again
+endless-ness
+	start in blackness
+	rise above the ground where you see mountains/spooky girl start
+	rise up to the  moon
+	the world slowly rotates 180 and you speed back to the ground
+		excuse is “just in time for supper” or similar
+	you burst through the ground in slow motion and enter mysterious land again
+	enable hard mode
 
-==============================
+instead of lots of levels, you play the same ones 3 times - standard, hard, insane
+
+=====================================================================================
 
 slice:
 
-basic enemies
-	idle
-	spinning long boxes
+= basic enemies
 	angled path, shooting
 	pause, fly towards player
 complex enemies
@@ -88,32 +95,27 @@ boss
 	complex bullet patterns
 	scripted movement/shooting pattern
 
-bullet waves - tweening, scripting
-	gun system
-
-respawn system, lives
-
-level structure
+= gun system 
+	bullet waves - tweening, scripting
+	
+= level structure
 placement of enemies, activating events
 	event box that turns on children
-	maybe box under the player that enables things that enter it?
-restarting
+=	maybe box under the player that enables things that enter it?
+
+reloading/loading levels
 
 backgrounds
 	efficient scrolling background - start, loop, end sections
 
-==============================
+=====================================================================================
 
-simpler upgrade scheme
-getting x stars on a previous level gives you a bonus upgrade
-	Or getting x TOTAL stars
-can allocate a small number of upgrades before starting a level (rather than gold)
-will remember your allocation between rounds, but can switch at any time
-screen shows you flying, has tick-able boxes around you
-	box above represents shield
-	line of boxes for extra lives, etc
+programming:
 
-==============================
+any screen resolution
+	in-game ui moves itself around
+
+=====================================================================================
 
 programming TODO:
 

@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AttachToScreen.cs" />
      <Compile Include="Assets\Scripts\Ballistic.cs" />
      <Compile Include="Assets\Scripts\CopyLocalPosition.cs" />
      <Compile Include="Assets\Scripts\DestroyWhenOffCamera.cs" />
@@ -53,6 +54,7 @@
      <Compile Include="Assets\Scripts\TheCamera.cs" />
      <Compile Include="Assets\Scripts\TheGameManager.cs" />
      <Compile Include="Assets\Scripts\ThePlayer.cs" />
+     <Compile Include="Assets\Scripts\UILifeContainer.cs" />
      <Compile Include="Assets\Scripts\Utils.cs" />
      <None Include="Assets\Notes.txt" />
  <Reference Include="UnityEngine.UI">

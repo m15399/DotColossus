@@ -23,18 +23,19 @@ public class TheCamera : MonoBehaviour {
 		-playerDistFromCenter
 	};
 
-	// Yoffset from player
+	// Current Yoffset from player
 	float yoff;
 
-	PlayerPosition ppos = PlayerPosition.MIDDLE;
+	// Target position (bottom/middle/top)
+	PlayerPosition ppos;
 
 	void Start(){
 		Reset();
 	}
 
 	void Reset(){
-		yoff = 0;
 		ppos = PlayerPosition.BOTTOM;
+		yoff = -playerPositions[(int)ppos];
 	}
 
 	void LateUpdate () {
