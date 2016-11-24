@@ -75,4 +75,28 @@ public class Utils {
 		return Mathf.Round(val * pow) / pow;
 	}
 
+	public static Vector3 AngleToVector(float angle){
+		return new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle), 0);
+	}
+
+	public static float VectorToAngle(Vector2 vector){
+		return Mathf.Rad2Deg * Mathf.Atan2(vector.y, vector.x);
+	}
+
+	public static float AngleBetween(float a1, float a2){
+		float angle = a2 - a1;
+		while(angle < -180) angle += 360;
+		while(angle > 180) angle -= 360;
+		return angle;
+	}
+
+	public static float MoveAngleTowards(float a1, float a2, float maxAngle){
+		float dAngle = Utils.AngleBetween(a1, a2);
+		float absDAngle = Mathf.Abs(dAngle);
+
+		if(absDAngle > maxAngle)
+			dAngle = dAngle / absDAngle * maxAngle;
+
+		return a1 + dAngle;
+	}
 }
