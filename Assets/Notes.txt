@@ -3,12 +3,19 @@ design:
 
 two button mobile game - left and right
 you control a little white box that has cool particle trail
+pacifist scrolling shooter
 
 the game flows like an endless runner, but there are checkpoints in the middle
+could be life based like most shooters
+or like 140 - dying rewinds you to checkpoint until you beat it
+
 you can replay earlier sections to gain stars, or continue from where you left off
 getting x stars on a previous level gives you a bonus upgrade
 	or getting x TOTAL stars
 	provides multiple challenges - 3 starring earlier levels vs beating hard ones
+	stars given: no deaths, no upgrades, no deaths/no upgrades
+		(survivor, bare metal/raw metal, hardcore)
+	two stars just for completion
 can allocate a small number of upgrades before starting a level
 	will remember your allocation between rounds, but can switch at any time
 	screen shows you flying, has tick-able boxes around you
@@ -22,7 +29,9 @@ upgrades
 	repel bullets
 	suck in gold
 	double tap to dash
-	hold both buttons for .25 to slow down
+	hold both buttons for .25 to use special (switchable)
+		slow down time for 3 seconds
+		blow up nearby bullets
 	extra lives for level
 
 2 player mode!
@@ -82,6 +91,34 @@ endless-ness
 instead of lots of levels, you play the same ones 3 times - standard, hard, insane
 
 =====================================================================================
+
+specific ideas:
+
+preindicating bullet
+	ball with a line coming out showing its direction
+	may spawn pointing at the player, forcing the player to move
+	many may spawn at once, sometimes in combination with other bullet patterns
+	song that’s like: baaabbbbababaaa BOOOHH - spawns bullets, then all fly
+
+lasers that force you to weave to the beat
+	mid   mid   mid   mid   mid   mid   mid   mid
+	sometimes weave other bullets on sides so you have to switch up
+	mid right mid left mid   mid
+
+boss that you have to throw projectiles back at
+	missiles orbit you - you have to steer them back to the boss
+
+4 direction lasers
+	blink on and off at steady intervals (in sync or one after another)
+	whole thing rotates around faster and faster
+
+sword guy with long laser sword
+	swings it from side to down, moves around
+	can have multiple of them mixing patterns (they are fairly small)
+	can have some with multiple swords
+
+===================================================================================
+
 
 slice:
 

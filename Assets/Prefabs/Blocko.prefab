@@ -55,10 +55,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77c73222bd1cf4cda936ff00bb5b20ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xv: 0
-  yv: 0
-  xFric: 0.03
-  yFric: 0
+  v: {x: 0, y: 0}
+  fric: {x: 0.025, y: 0}
+  maxSpeed: -1
   rv: 0
   rFric: 0
   destroyOffCamera: 1

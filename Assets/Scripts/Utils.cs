@@ -75,8 +75,8 @@ public class Utils {
 		return Mathf.Round(val * pow) / pow;
 	}
 
-	public static Vector3 AngleToVector(float angle){
-		return new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle), 0);
+	public static Vector2 AngleToVector(float angle){
+		return new Vector2(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle));
 	}
 
 	public static float VectorToAngle(Vector2 vector){

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ThePlayer : MonoBehaviour {
 
-	const float accel = 1.25f;
+	const float accel = 1f;
 	const float fric = .2f;
 	const float maxSpeed = 4f;
 

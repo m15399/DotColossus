@@ -18,7 +18,7 @@ public class TheBlockoFactory : MonoBehaviour {
 		GameObject b = GameObject.Instantiate(blocko);
 		b.tag = "Bullet";
 		b.transform.position = transform.position;
-		b.GetComponent<Ballistic>().xv = v;
+		b.GetComponent<Ballistic>().v.x = v;
 
 		Invoke("Fire", 1/rof);
 	}
